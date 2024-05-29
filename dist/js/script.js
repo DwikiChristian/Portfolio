@@ -49,4 +49,13 @@ function sendMail(){
 .catch(error=>console.log(error));
 }
 
+const emote = document.getElementById('emote');
+
+    emote.addEventListener('click', () => {
+        if (emote.style.animation) {
+            emote.style.animation = '';
+        } else {
+            emote.style.animation = 'shake 0.5s infinite';
+        }
+    });
 
